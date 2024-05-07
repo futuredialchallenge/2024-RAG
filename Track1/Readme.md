@@ -35,7 +35,6 @@ The final submission should contain a json file as follows.
         "id": "2aa131d5143bddb3772f595292987780", // dial id,
         "turn_num": "0", // the turn number of the dial,
         "top20_id": [ 1,2,3,……] // ranked top 20 doc index, top 5, top1 can be directly gotten by [:5] and [:1]
-        ]
     },
 ……   
 ]
