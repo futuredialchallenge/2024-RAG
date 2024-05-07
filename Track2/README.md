@@ -53,10 +53,10 @@ The baseline results for reference is:
 |0.118 |0.598 |11.04|
 
 # Submission Format
-The final submission should contain a json file as follows. 
+The system should output the following formatted json file.
 ```Json
 [
-    { // a doc
+    {
         "id": "2aa131d5143bddb3772f595292987780", // dial id,
         "turn_num": "0", // the turn number of the dial,
         "客服-生成": "季节在变" // the generated results
