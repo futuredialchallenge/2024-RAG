@@ -25,8 +25,8 @@ python retrieve_kb.py
 ### Evaluation and Results
 We use recall as the basic metric. The results are:
 
-| R@1  | R@5 | R@5 |
+| R@1  | R@5 | R@20 |
 | ---: | :--- |:--- |
-|0.300 | 0.478|0.478|0.606|
+|0.300 | 0.478|0.606|
 
 The results are relatively low, which indicates the task is challenging and needs more powerful models. 
