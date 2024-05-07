@@ -1,3 +1,7 @@
+"""
+Copyright 2024 Tsinghua University
+Author: Yucheng Cai (cyc22@mails.tsinghua.edu.cn)
+"""
 
 import math, logging, copy, json, re
 from collections import Counter, OrderedDict

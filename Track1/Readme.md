@@ -1,4 +1,4 @@
-# Task    
+# Track1: Information retrieval based on knowledge bases and dialog context 
 In a RAG-based dialog system, the system needs to retrieval from knowledge base to get relevant knowledge. Given a mix of labeled and unlabeled dialog transcripts, Track 1 examines the task of training information retrieval models to retrieve knowledge from the knowledge base for each dialog, which will be needed in training TOD systems in Track 2.    
 # Evaluation  
 Given a dialog in testing, the trained information retrieval model is used to retrieve the knowledge pieces together with slot values. We will evaluate and rank the submitted models by the extraction performance on test set. The evaluation metrics are Precision, Recall and F1.  

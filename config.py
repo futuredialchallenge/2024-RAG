@@ -1,3 +1,8 @@
+"""
+Copyright 2024 Tsinghua University
+Author: Yucheng Cai (cyc22@mails.tsinghua.edu.cn)
+"""
+
 import logging, time, os
 
 class _Config:

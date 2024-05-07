@@ -1,23 +1,11 @@
 # Mobile Customer-Service Dialog Dataset 2 (MobileCS2)
 
-This directory contains examples for the official dataset for [SereTOD Challenge](../README.md).
-The evaluation data will be released later.
-
 ## Data Description
-An important feature for SereTOD challenge is that we release around 6,000 dialogs (in Chinese), which come from real-world dialog transcripts between real users and
-customer-service staffs from China Mobile, with privacy information anonymized. 
-We call this dataset as **MobileCS2** (mobile customer-service) dialog dataset, which differs from existing RAG datasets in both **nature** and **data-modelling** significantly.
-To the best of our knowledge, MobileCS2 is not only a unique publicly available RAG-based dialog dataset, but also consists of real-life data (namely collected in real-world scenarios).
+The 1st FutureDial challenge at EMNLP 2022 focused on building semi-supervised and reinforced task-oriented dialog systems ([FutureDial-SereTOD](http://seretod.org/)), and released a large-scale human-human dialog dataset MobileCS1 (Mobile Customer Service). 
 
-A schema is provided, based on which 3K dialogs are labeled by crowdsourcing. The remaining 3K dialogs are unlabeled.
-The teams are required to use this mix of labeled and unlabeled data to train information retrieval models (Track 1), which could provide a knowledge base query results for Track 2, and train RAG-based dialog systems (Track 2), which could work as customer-service bots.
-We put aside 413 dialogs as evaluation data. More details can be found in [Challenge Description](http://seretod.org/SereTOD_Challenge_Description_v2.0.pdf) .
+The 2nd FutureDial challenge focuses on building dialog systems with RAG, with the following features:
 
-## Data Format
-We provide some dialog examples in [example.json](example.json), consisting of 100 dialogs.
-The entire MobileCS dataset is provided to registered teams.
-
-The dataset contains a list of instances, each of which is a dialog between a user and a customer-service staff. Each dialog is a list of turns. Each turn includes the following objects:
-* Speaker ID: the speaker of the dialogue, such as "[SPEAKER 1]" and "[SPEAKER 2]"
-* Intents: the intent of each speaker in this turn. "用户意图" represents the user intent, "客服意图" represents the system intent
-* Information: including the entities and triples mentioned in this turn
+- We release a new dataset from the China Mobile customer-service logs (MobileCS2) that contains both labeled and unlabeled data.
+There are a total of 6K dialog logs, with nearly 3K carefully annotated. We encourage the study of semi-supervised RAG-based dialog systems. 
+- The dataset enables the study of building dialog systems with knowledge base queries and API calls.
+- The dataset is available in both *Chinese* and *English* versions to the public, so that researchers around the world can experiment with this dataset.
