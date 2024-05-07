@@ -48,6 +48,11 @@ For automatic evaluation, metrics include Inform rate, Bertscore and BLEU score.
 
 We will provide the following scripts and tools for the participants: 1) A baseline system; 2) Evaluation scripts to calculate the corpus-based metrics.
 
+The baseline results for reference is:
+| Inform | Bert-score | BLEU |
+| ---: | :--- |:--- |
+| | ||
+
 # Submission Format
 
 
