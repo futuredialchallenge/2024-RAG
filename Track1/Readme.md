@@ -14,6 +14,12 @@ First, install all the requirements:
 pip install -r requirements.txt 
 ```
 
+Then, generate the knowledge base and the retrieval training files from the training dataset using the following code:
+```Shell
+python process_data.py
+python reader.py
+```
+
 Then, use the following script to train the retrieval model:
 ```Shell
 python retrieve_kb.py
