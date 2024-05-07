@@ -53,7 +53,7 @@ We provide the following scripts and tools for the participants: 1) A baseline s
 The baseline results for reference is:
 | Inform | Bert-score | BLEU |
 | ---: | :--- |:--- |
-| | ||
+|0.118 |0.598 |11.04|
 
 # Submission Format
 The final submission should contain a json file as follows. 
