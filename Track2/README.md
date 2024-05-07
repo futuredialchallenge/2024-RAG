@@ -17,7 +17,7 @@ First, install all the requirements:
 pip install -r requirements.txt 
 ```
 
-Then, generate the knowledge base from the training dataset using the following code:
+Then, generate the knowledge base (global_kb.json) and the Faq documents (qa.json) from the training dataset using the following code:
 ```Shell
 python process_data.py
 ```
