@@ -24,5 +24,9 @@ python retrieve_kb.py
 
 ### Evaluation and Results
 We use recall as the basic metric. The results are:
-**F1 (entity) 38.16, F1 (Triple) 38.40**. 
+
+| R@1  | R@5 | R@5 |
+| ---: | :--- |:--- |
+|0.300 | 0.478|0.478|0.606|
+
 The results are relatively low, which indicates the task is challenging and needs more powerful models. 
