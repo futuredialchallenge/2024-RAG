@@ -25,6 +25,7 @@ Then, use the following script to train the retrieval model:
 python retrieve_kb.py
 ```
 
+Note, you may need to download the pretrained model bge-large-zh-v1.5 to the corresponding place to initialize the retriever model. 
 ### Submission Format
 
 
