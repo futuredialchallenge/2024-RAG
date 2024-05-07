@@ -4,10 +4,10 @@ This repository contains the README for Futuredial-RAG Track2.
 Most existing dialog systems do not carefully model the availble knowledge for the speakers given the context. Our systems require retrieval from multiple knowlege sources, including: a global knowledge base (global KB) covering all product information, a FAQ base (FAQ) covering recent asked questions and answers, a uniquelocal knowledge base for each dialog containing user specific knowledge (local KB) covering all product information. Compared with previous work, the task in Track2 has two main characteristics:
 * There are multiple knowledge sources for the dialog system to search from.
 *  Multiple pieces of knowledge may be useful for response generation given the context.
-*  Only a proportion of the dialogs is annotated with intents and local KBs. The teams are encouraged to utilize a mix of labeled and unlabeled dialogs to build a TOD system.
+*  Only a proportion of the dialogs is annotated with intents and local KBs. The teams are encouraged to utilize a mix of labeled and unlabeled dialogs to build a dialog system.
 
 # Task Definition
-The basic task for the TOD system is, for each dialog turn, given the dialog history, the user utterance, the local KB, and the global KB (including FAQ lists), to predict the useful knowledge pieces from the knowledge base and then generate an appropriate response. 
+The basic task for the diualog system is, for each dialog turn, given the dialog history, the user utterance, the local KB, and the global KB (including FAQ lists), to predict the useful knowledge pieces from the knowledge base and then generate an appropriate response. 
 For every labeled dialog, useful knowledge pieces may be predicted by the retrieval model in Track 1, or the dialog system can predict the useful knowledge pieces itself.
 For unlabeled dialogs, there are no knowledge base annotations.
 
