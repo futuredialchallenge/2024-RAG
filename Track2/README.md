@@ -22,17 +22,17 @@ pip install -r requirements.txt
 
 Then, use the following script to train the generation model:
 ```Shell
-bash train.sh
+bash Track2/train.sh
 ```
 
 Then, use the following script to test the generation model with oracle knowledge base (Note: this test mode will not be considered for the final submission):
 ```Shell
-bash test.sh
+bash Track2/test.sh
 ```
 
 Then, use the following script to test the generation model with a trained retriever:
 ```Shell
-bash test_with_ret.sh
+bash Track2/test_with_ret.sh
 ```
 # Evaluation
 In order to measure the performance of TOD systems, both automatic evaluation and human evaluation will be conducted. 
