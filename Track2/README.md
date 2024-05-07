@@ -11,6 +11,29 @@ The basic task for the TOD system is, for each dialog turn, given the dialog his
 For every labeled dialog, useful knowledge pieces may be predicted by the retrieval model in Track 1, or the dialog system can predict the useful knowledge pieces itself.
 For unlabeled dialogs, there are no knowledge base annotations.
 
+# Baseline 
+The folder provides a baseline for the retrieval system.  
+
+### Setup
+First, install all the requirements:
+```Shell
+pip install -r requirements.txt 
+```
+
+Then, use the following script to train the generation model:
+```Shell
+bash train.sh
+```
+
+Then, use the following script to test the generation model with oracle knowledge base (Note: this test mode will not be considered for the final submission):
+```Shell
+bash test.sh
+```
+
+Then, use the following script to test the generation model with a trained retriever:
+```Shell
+bash test_with_ret.sh
+```
 # Evaluation
 In order to measure the performance of TOD systems, both automatic evaluation and human evaluation will be conducted. 
 For automatic evaluation, metrics include Inform rate, Bertscore and BLEU score. Inform rate is the percentage of useful knowledge contained in the generated responses. BLEU score evaluates the fluency of generated responses. Bertscore evalutes the similarity between the generated responses and the ground-truth responses.
