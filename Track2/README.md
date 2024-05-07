@@ -7,7 +7,7 @@ Most existing dialog systems do not carefully model the available knowledge for 
 *  Only a proportion of the dialogs is annotated with intents and local KBs. The teams are encouraged to utilize a mix of labeled and unlabeled dialogs to build a dialog system.
 
 # Task Definition
-The basic task for the dialog system is, for each dialog turn, given the dialog history, the user utterance, the local KB, and the global KB (including FAQ lists), to predict the useful knowledge pieces from the knowledge base and then generate an appropriate response. 
+The basic task for the dialog system is that for each dialog turn, given the dialog history, the user utterance, the local KB, and the global KB (including FAQ lists), to predict the useful knowledge pieces from the knowledge base and then generate an appropriate response. 
 For every labeled dialog, useful knowledge pieces may be predicted by the retrieval model in Track 1, or the dialog system can predict the useful knowledge pieces itself.
 For unlabeled dialogs, there are no knowledge base annotations.
 
