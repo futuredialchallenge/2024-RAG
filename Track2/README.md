@@ -45,8 +45,8 @@ Note, you may need to download a chinese-bert model bert-base-chinese to the cor
 Also note that the evaluation process is a little bit slow, which may take 80 minutes on one V100, and we are trying to optimize the code to improve the speed.
 
 # Evaluation
-In order to measure the performance of TOD systems, both automatic evaluation and human evaluation will be conducted. 
-For automatic evaluation, metrics include Inform rate, Bertscore and BLEU score. Inform rate is the percentage of useful knowledge contained in the generated responses. BLEU score evaluates the fluency of generated responses. Bertscore evalutes the similarity between the generated responses and the ground-truth responses.
+In order to measure the performance of TOD systems, we conduct automatic evaluation. 
+The metrics include Inform rate, Bertscore and BLEU score. Inform rate is the percentage of useful knowledge contained in the generated responses. BLEU score evaluates the fluency of generated responses. Bertscore evalutes the similarity between the generated responses and the ground-truth responses.
 
 We will provide the following scripts and tools for the participants: 1) A baseline system; 2) Evaluation scripts to calculate the corpus-based metrics.
 
