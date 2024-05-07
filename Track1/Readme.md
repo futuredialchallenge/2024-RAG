@@ -3,7 +3,7 @@ In a RAG-based dialog system, the retrieval model needs to retrieve from knowled
 # Evaluation  
 Given a dialog in testing, the trained information retrieval model is used to retrieve the knowledge pieces. We will evaluate and rank the submitted models by the retrieval model performance on test set. The evaluation metrics are Recall@1, Recall@5, and Recall@20.  
 
-The average F1 scores of entity extraction and slot filling will be the ranking basis on leaderboard. We will provide the following scripts and tools for the participants: 1) Baseline models for both sub-tasks; 2) Evaluation scripts to calculate the metrics.
+We will provide the following scripts and tools for the participants: 1) Baseline models for both sub-tasks; 2) Evaluation scripts to calculate the metrics.
 
 # Baseline 
 The folder provides a baseline for the retrieval system.  
