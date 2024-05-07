@@ -1,4 +1,4 @@
-# Track2: Dialog Systems with retrieval augmented generation
+# Track2: Dialog systems with retrieval augmented generation
 This repository contains the README for Futuredial-RAG Track2.
 
 Most existing dialog systems do not carefully model the availble knowledge for the speakers given the context. Our systems require retrieval from multiple knowlege sources, including: a global knowledge base (global KB) covering all product information, a FAQ base (FAQ) covering recent asked questions and answers, a uniquelocal knowledge base for each dialog containing user specific knowledge (local KB) covering all product information. Compared with previous work, the task in Track2 has two main characteristics:
