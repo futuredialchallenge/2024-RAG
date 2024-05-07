@@ -27,7 +27,7 @@ Then, use the following script to train the generation model:
 bash Track2/train.sh
 ```
 
-Then, use the following script to test the generation model with oracle knowledge base (Note: this test mode will not be considered for the final submission):
+Then, use the following script to test the generation model with oracle knowledge pieces (Note: this test mode will not be considered for the final submission):
 ```Shell
 bash Track2/test.sh
 ```
