@@ -43,7 +43,7 @@ Also note that the evaluation process is a little bit slow, which may take 80 mi
 
 # Evaluation
 In order to measure the performance of dialog systems, we conduct automatic evaluation. 
-The metrics include Inform rate, Bertscore and BLEU score. Inform rate is the percentage of useful knowledge contained in the generated responses. BLEU score evaluates the fluency of generated responses. Bertscore evalutes the similarity between the generated responses and the ground-truth responses.
+The metrics include Inform rate, Bertscore and BLEU score. Inform Rate refers to how often the system is able to cover the requested information by the user. BLEU score evaluates the fluency of generated responses. Bertscore evalutes the similarity between the generated responses and the ground-truth responses.
 
 We provide the following scripts and tools for the participants: 1) A baseline system; 2) Evaluation scripts to calculate the corpus-based metrics.
 
