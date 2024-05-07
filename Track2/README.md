@@ -56,5 +56,16 @@ The baseline results for reference is:
 | | ||
 
 # Submission Format
-
+The final submission should contain a json file as follows. 
+```Json
+[
+    { // a doc
+        "id": "2aa131d5143bddb3772f595292987780", // dial id,
+        "turn_num": "0", // the turn number of the dial,
+        "客服-生成": "季节在变" // the generated results
+        ]
+    },
+……   
+]
+```
 
