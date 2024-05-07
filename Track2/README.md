@@ -20,6 +20,11 @@ First, install all the requirements:
 pip install -r requirements.txt 
 ```
 
+Then, generate the knowledge base from the training dataset using the following code:
+```Shell
+python process_data.py
+```
+
 Then, use the following script to train the generation model:
 ```Shell
 bash Track2/train.sh
@@ -42,5 +47,4 @@ We will provide the following scripts and tools for the participants: 1) A basel
 
 # Submission Format
 
-# Data and Baseline
 
