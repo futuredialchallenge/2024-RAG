@@ -39,6 +39,9 @@ Then, use the following script to test the generation model with a trained retri
 ```Shell
 bash Track2/test_with_ret.sh
 ```
+
+Note, you may need to download a chinese-bert model bert-base-chinese to the corresponding place if directly visiting to the huggingface website is not available to run the evaluation scripts to get the Bertscore metrics. Also, you may need to download the pretrained model bge-large-zh-v1.5 to the corresponding place.
+
 # Evaluation
 In order to measure the performance of TOD systems, both automatic evaluation and human evaluation will be conducted. 
 For automatic evaluation, metrics include Inform rate, Bertscore and BLEU score. Inform rate is the percentage of useful knowledge contained in the generated responses. BLEU score evaluates the fluency of generated responses. Bertscore evalutes the similarity between the generated responses and the ground-truth responses.
