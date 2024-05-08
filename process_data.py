@@ -888,7 +888,6 @@ def get_final_datasets():
     #'dev':['data/dev_final.json', 'data/dev_final_processed.json'],
     #'test':['data/test_final.json', 'data/test_final_processed.json']
     # }
-    ids = json.loads(open('data/new_vocab.json', 'r').read())
     id_error = []
     global_kb = []
     qa = {}
@@ -927,11 +926,8 @@ def get_final_datasets():
             new_dial['local_kb'] = local_kb
             if local_kb != []:
                 count += 1
-            if id in ids:
-                new_dials[ids[id]] = new_dial
-            else:
-                new_dials[id] = new_dial
-                id_error.append(id)
+            new_dials[id] = new_dial
+
         print(f"file:{file},total_session:{len(dials.keys())},local_kb_num: {count}")
         json.dump(new_dials, open(source_data[file][1], 'w'), indent=2, ensure_ascii=False) 
     print(id_error)  
