@@ -884,7 +884,7 @@ def merge_annotate_result():
     return
 
 def get_final_datasets():
-    source_data = {'train':['data/train_final.json', 'data/train_final_processed.json']} # ,
+    source_data = {'train':['data/train_final_processed.json', 'data/train_final_processed.json']} # ,
     #'dev':['data/dev_final.json', 'data/dev_final_processed.json'],
     #'test':['data/test_final.json', 'data/test_final_processed.json']
     # }
@@ -929,7 +929,7 @@ def get_final_datasets():
             new_dials[id] = new_dial
 
         print(f"file:{file},total_session:{len(dials.keys())},local_kb_num: {count}")
-        json.dump(new_dials, open(source_data[file][1], 'w'), indent=2, ensure_ascii=False) 
+        # json.dump(new_dials, open(source_data[file][1], 'w'), indent=2, ensure_ascii=False) 
     print(id_error)  
     json.dump(global_kb, open('data/global_kb.json', 'w'), indent=2, ensure_ascii=False)
     json.dump(qa, open('data/qa.json', 'w'), indent=2, ensure_ascii=False)
