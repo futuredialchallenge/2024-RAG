@@ -26,6 +26,8 @@ Then, use the following script to train the retrieval model:
 python retrieve_kb.py
 ```
 
+To test the results of the trained model, you can switch the function in retrieve_kb to test_api_model_retrieve. 
+
 Note, you may need to download the pretrained model bge-large-zh-v1.5 to the corresponding place to initialize the retriever model. 
 ### Submission Format
 
