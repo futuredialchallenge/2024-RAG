@@ -684,6 +684,6 @@ if __name__ == "__main__":
     cfg.mode = 'train_retrieve'
     cfg._init_logging_handler()
 
-    #train_api_model(cfg)
-    #train_api_model_retrieve(cfg)
-    test_api_model_retrieve(cfg)
+    # train_api_model(cfg)
+    train_api_model_retrieve(cfg)
+    # test_api_model_retrieve(cfg)
