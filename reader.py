@@ -730,7 +730,7 @@ def _bucket_by_turn(encoded_data):
         turn_len = len(dial)
         #修改记录：对于turn_len=0情况的处理
         if turn_len==0:
-            continue_construct_mini_batch
+            continue
         if turn_len not in turn_bucket:
             turn_bucket[turn_len] = []
         turn_bucket[turn_len].append(dial)
