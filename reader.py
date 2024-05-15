@@ -109,8 +109,8 @@ def read_data_api(tokenizer, ret_train=False):
         #    data_path_test = 'data/test.json'
         train_data = json.loads(open(data_path_train, 'r').read())
         dev_data = json.loads(open(data_path_dev, 'r').read())
-        test_data = json.loads(open(data_path_test, 'r').read())
-        source_data = {'train':train_data,'dev':dev_data,'test':test_data}
+        # test_data = json.loads(open(data_path_test, 'r').read())
+        source_data = {'train':train_data, 'dev':dev_data} # ,'test':test_data}
 
         encoded_data = {'train':[],'dev':[],'test':[]}
         count = 0
@@ -591,7 +591,7 @@ def read_data(tokenizer, posterior = False, return_dict =False, retrieve=False, 
         test_path = 'data/test_final_processed.json'
         train_data = json.load(open(cfg.data_path, 'r', encoding='utf-8')) # 'data/train_final_processed.json'
         dev_data = json.load(open(dev_path, 'r', encoding='utf-8'))
-        test_data = json.load(open(test_path, 'r', encoding='utf-8'))
+        # test_data = json.load(open(test_path, 'r', encoding='utf-8'))
         # get seq data
         logging.info('Encoding data ...')
         if retrieve:
@@ -601,7 +601,7 @@ def read_data(tokenizer, posterior = False, return_dict =False, retrieve=False, 
             #    encoded_data['train'].extend(get_pseudo_retrieval_data(tokenizer))
             encoded_data['train'].extend(get_retrieval_data(train_data, tokenizer))
             encoded_data['dev'] = get_retrieval_data(dev_data, tokenizer)
-            encoded_data['test'] = get_retrieval_data(test_data, tokenizer)
+            # encoded_data['test'] = get_retrieval_data(test_data, tokenizer)
         elif ebm:
             encoded_data = {}
             encoded_data['train'] = []
@@ -618,14 +618,14 @@ def read_data(tokenizer, posterior = False, return_dict =False, retrieve=False, 
             logging.info('Sequences -- Train:{}, dev:{}, test:{}'.format(len(train_seqs), len(dev_seqs), len(test_seqs)))
             seq_data={
                 'train':train_seqs,
-                'dev':dev_seqs,
-                'test':test_seqs
+                'dev':dev_seqs
             }
+            # , 'test':test_seqs }
             if not return_dict:
                 json.dump(seq_data, open(os.path.join(cfg.data_dir, 'all_data.json'), 'w'),indent=2, ensure_ascii=False)
             else:
                 encoded_data={}
-                for s in ['train', 'dev', 'test']:
+                for s in ['train', 'dev']: # , 'test']:
                     encoded_data[s]=[]
                     for seq in seq_data[s]:
                         encoded_dial = []
@@ -650,7 +650,7 @@ def read_data(tokenizer, posterior = False, return_dict =False, retrieve=False, 
             pseudo_num = cfg.pseudo_porportion*len(encoded_data['train'])
             encoded_data['train'].extend(pseudo_data[:pseudo_num])
         """
-    logging.info('Train:{}, dev:{}, test:{}'.format(len(encoded_data['train']), len(encoded_data['dev']), len(encoded_data['test'])))
+    logging.info('Train:{}, dev:{}, test:{}'.format(len(encoded_data['train']), len(encoded_data['dev']))) # , len(encoded_data['test'])
     return encoded_data
 
 def convert_to_dict(tokenizer,data):
