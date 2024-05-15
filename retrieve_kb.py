@@ -226,13 +226,11 @@ def train_api_model_retrieve(cfg):
     encoded_data = read_data_api(tokenizer, ret_train=True)
     
     train_dataset = encoded_data['train']
-    #train_dataset.extend(encoded_data['dev'])
-    #train_dataset = encoded_data['dev']
-    #train_dataset.extend(encoded_data['train'])
     print(len(train_dataset))
+    
     train_dataloader=DataLoader(train_dataset, batch_size=cfg.batch_size, shuffle=True, collate_fn=collate_fn)
-    dev_dataloader=DataLoader(encoded_data['test'], batch_size=cfg.eval_batch_size, collate_fn=collate_fn)
-    test_dataloader=DataLoader(encoded_data['test'], batch_size=cfg.eval_batch_size, collate_fn=collate_fn)
+    dev_dataloader=DataLoader(encoded_data['dev'], batch_size=cfg.eval_batch_size, collate_fn=collate_fn)
+    test_dataloader=DataLoader(encoded_data['dev'], batch_size=cfg.eval_batch_size, collate_fn=collate_fn)
     optimizer, scheduler = get_sep_optimizers(cfg, num_turns=len(encoded_data['train']), model=context_model)
     global_step = 0
     oom_time = 0
@@ -305,7 +303,7 @@ def test_api_model_retrieve(cfg):
     passage_model.eval()
 
     encoded_data = read_data_api(tokenizer, ret_train=True)
-    test_dataloader=DataLoader(encoded_data['test'], batch_size=cfg.eval_batch_size, collate_fn=collate_fn)
+    test_dataloader=DataLoader(encoded_data['dev'], batch_size=cfg.eval_batch_size, collate_fn=collate_fn) # encoded_data['test']
 
     global_index = build_global_index(passage_model, tokenizer, batch_size=16)
 
