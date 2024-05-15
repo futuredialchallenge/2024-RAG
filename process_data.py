@@ -884,8 +884,8 @@ def merge_annotate_result():
     return
 
 def get_final_datasets():
-    source_data = {'train':['data/train_final_processed.json', 'data/train_final_processed.json']} # ,
-    #'dev':['data/dev_final.json', 'data/dev_final_processed.json'],
+    source_data = {'train':['data/train_final_processed.json', 'data/train_final_processed.json'], 
+    'dev':['data/dev_final_processed.json', 'data/dev_final_processed.json']}
     #'test':['data/test_final.json', 'data/test_final_processed.json']
     # }
     id_error = []
