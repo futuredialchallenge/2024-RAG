@@ -600,11 +600,11 @@ def read_data(tokenizer, posterior = False, return_dict =False, retrieve=False, 
             #    encoded_data['train'].extend(get_pseudo_retrieval_data(tokenizer))
             encoded_data['train'].extend(get_retrieval_data(train_data, tokenizer, ebm=True))
             encoded_data['dev'] = get_retrieval_data(dev_data, tokenizer, ebm=True)
-            encoded_data['test'] = get_retrieval_data(test_data, tokenizer, ebm=True)
+            # encoded_data['test'] = get_retrieval_data(test_data, tokenizer, ebm=True)
         else:
             train_seqs=convert_to_sequences(train_data, posterior, return_dict = return_dict)
             dev_seqs=convert_to_sequences(dev_data, posterior, return_dict = return_dict)
-            test_seqs=convert_to_sequences(test_data, posterior, return_dict = return_dict)
+            # test_seqs=convert_to_sequences(test_data, posterior, return_dict = return_dict)
             logging.info('Dialogs -- Train:{}, dev:{}, test:{}'.format(len(train_data), len(dev_data), len(test_data)))
             logging.info('Sequences -- Train:{}, dev:{}, test:{}'.format(len(train_seqs), len(dev_seqs), len(test_seqs)))
             seq_data={
