@@ -481,7 +481,7 @@ def evaluate_ret(passage_model, context_model, dev_dataloader, global_index, cfg
     context_model.eval()
     preds = []
     trues = []
-    data_dict = json.loads(open('data/test_final_processed.json', 'r').read())
+    data_dict = json.loads(open('data/dev_final_processed.json', 'r').read()) # 'data/test_final_processed.json'
     global_kb = json.loads(open('kb/ret_qa.json', 'r').read())
     #data_dict = json.loads(open('data/test.json', 'r').read())
     wrong_cases = []
