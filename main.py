@@ -671,7 +671,7 @@ class Model(object):
         if data == 'dev':
             eval_data = encoded_data['dev']
         elif data =='test':
-            eval_data = encoded_data['test']
+            eval_data = encoded_data['dev'] # encoded_data['test']
         origin_batch_size=cfg.batch_size
         cfg.batch_size=cfg.eval_batch_size
         batches=get_batches(eval_data,cfg.batch_size)#cfg.batch_size
