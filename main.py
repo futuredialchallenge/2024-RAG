@@ -603,7 +603,7 @@ class Model(object):
         spoken = []
 
         if cfg.rag_training and cfg.rag_testing:
-            global_kb = json.loads(open('kb/ret_qa.json', 'r').read())
+            global_kb = json.loads(open('data/ret_qa.json', 'r').read())
 
         with torch.no_grad():
             # generate bspn
