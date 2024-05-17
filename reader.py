@@ -110,7 +110,7 @@ def read_data_api(tokenizer, ret_train=False):
             #kb_sv = json.loads(open('qa_cleaned_new.json', 'r').read())
             #kb_vs_des = json.loads(open('qa_cleaned_ret.json', 'r').read())
             _, kb_vs_des, _ = get_new_qa(return_result=True)
-            kb_ret = json.loads(open('kb/ret_qa.json', 'r').read())
+            kb_ret = json.loads(open('data/ret_qa.json', 'r').read())
             #kb_vs = {kb_sv[s]:s for s in kb_sv}
 
             for key,data in source_data.items():
@@ -1256,7 +1256,7 @@ def get_new_qa(return_result=False):
     else:
         json.dump(kb, open('qa_cleaned_new.json', 'w'), indent=2, ensure_ascii=False)
         json.dump(kb_ret, open('qa_cleaned_ret.json', 'w'), indent=2, ensure_ascii=False)
-        json.dump(ret_kb, open('kb/ret_qa.json', 'w'), indent=2, ensure_ascii=False)
+        json.dump(ret_kb, open('data/ret_qa.json', 'w'), indent=2, ensure_ascii=False)
         return 
 
 def analysis_data():
