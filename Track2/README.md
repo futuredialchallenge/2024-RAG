@@ -47,10 +47,10 @@ The metrics include Inform rate, Bertscore and BLEU score. Inform Rate refers to
 
 We provide the following scripts and tools for the participants: 1) A baseline system; 2) Evaluation scripts to calculate the corpus-based metrics.
 
-The baseline results for reference is:
+The baseline results for reference are: (dev set results)
 | Inform | Bert-score | BLEU |
 | ---: | :--- |:--- |
-|0.118 |0.598 |11.04|
+|0.092 |0.639 |14.54|
 
 # Submission Format
 The system should output the following formatted json file.
