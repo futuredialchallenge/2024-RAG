@@ -44,10 +44,10 @@ The system should output the following formatted json file.
 ```
 
 ### Evaluation and Results
-We use recall as the basic metric. The results are:
+We use recall as the basic metric. The results on the dev set are:
 
 | R@1  | R@5 | R@20 |
 | ---: | :--- |:--- |
-|0.300 | 0.478|0.606|
+|0.225 | 0.387|0.573|
 
 The results are relatively low, which indicates the task is challenging and needs more powerful models. 
