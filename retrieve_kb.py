@@ -320,7 +320,7 @@ def test_api_model_retrieve(cfg):
 
 def build_global_index(passage_model, tokenizer, batch_size=16):
     passage_model.eval()
-    passages = json.loads(open('kb/ret_qa.json', 'r').read())
+    passages = json.loads(open('data/ret_qa.json', 'r').read())
     n_batch = int(len(passages)/batch_size) + 1
 
     total = 0
@@ -480,7 +480,7 @@ def evaluate_ret(passage_model, context_model, dev_dataloader, global_index, cfg
     preds = []
     trues = []
     data_dict = json.loads(open('data/dev_final_processed.json', 'r').read()) # 'data/test_final_processed.json'
-    global_kb = json.loads(open('kb/ret_qa.json', 'r').read())
+    global_kb = json.loads(open('data/ret_qa.json', 'r').read())
     #data_dict = json.loads(open('data/test.json', 'r').read())
     wrong_cases = []
     correct_cases = []
