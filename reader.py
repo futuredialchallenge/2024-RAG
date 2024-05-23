@@ -189,9 +189,10 @@ def read_data_api(tokenizer, ret_train=False):
                             case['labels'] = [-1]
                         case['api_label'] = api_label
                         case['domain'] = api_label
-                        encoded_data[key].append(case)
                         if 'labels' not in case:
                             case['labels'] = [-1]
+                        if api_label!=4:
+                            encoded_data[key].append(case)
         else:
             for key,data in source_data.items():
                 for id, dial in data.items():
