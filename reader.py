@@ -353,9 +353,9 @@ def convert_to_sequences(data, posterior=False, return_dict=False):
     KB_count = 0
     for id, dial in data.items():
         new_dial = {"log":[]}
+        hist = ['']
         for turn in dial['log']:
             turn_dict = {}
-            hist = ['']
             if return_dict:
                 _ , hist = get_spoken(hist, [clean_utt(turn['user'].lower())], role='user')
 
