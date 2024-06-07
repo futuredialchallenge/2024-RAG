@@ -207,7 +207,7 @@ class Model(object):
                     #qa = eval_result['qa'][2]
                     inform = eval_result['inform']
                     bert_score = eval_result['bert_score'].item()
-                    eval_loss = bleu/50 + inform + bert_score
+                    eval_loss = bleu/200 + inform + bert_score/2
             logging.info('Epoch:{}, Train epoch time:{:.2f} min, epoch loss:{:.3f}, eval loss:{:.3f}'.format(epoch, (time.time()-btm)/60, tr_loss, eval_loss))
             self.tb_writer.add_scalar('eval_loss', eval_loss, epoch)
             if cfg.save_type =='max_score':
@@ -698,7 +698,7 @@ class Model(object):
             bleu = eval_result['BLEU']
             inform = eval_result['inform']
             bert_score = eval_result['bert_score'].item()
-            eval_loss = bleu/50 + inform + bert_score # change eval to matchjsa-krtod paper
+            eval_loss = bleu/200 + inform + bert_score/2
             logging.info(eval_loss)
             return eval_result
         else:
