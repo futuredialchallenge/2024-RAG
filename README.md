@@ -17,10 +17,10 @@ The task includes two tracks:
 |April 9, 2024 | Registration opening for the challenge|
 |April 29, 2024 | Training data release (extended)|
 |May 9, 2024 | Registration deadline for the challenge|
-|June 10, 2024 | Entry submission deadline |
-|June 20, 2024| Evaluation results announced|
 |June 20, 2024|SLT paper submission deadline|
 |June 27, 2024|SLT paper update deadline|
+|July 10, 2024 | Entry submission deadline |
+|July 20, 2024| Evaluation results announced|
 |August 30, 2024|Notification of paper acceptance|
 |December 2-5, 2024	|SLT2024 workshop (in-person)|
 
