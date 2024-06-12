@@ -37,6 +37,7 @@ Then, use the following script to test the generation model with a trained retri
 bash Track2/test_with_ret.sh 0 $exp_dir
 ```
 
+The $exp_dir is your own experiments path of the saved model.
 Note, you may need to download a chinese-bert model bert-base-chinese to the corresponding place if directly visiting to the huggingface website is not available to run the evaluation scripts to get the Bertscore metrics. Also, you may need to download the pretrained model bge-large-zh-v1.5 to the corresponding place.
 
 Also note that the evaluation process is a little bit slow, which may take 80 minutes on one V100, and we are trying to optimize the code to improve the speed.
