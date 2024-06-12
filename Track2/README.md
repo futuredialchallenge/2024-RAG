@@ -24,17 +24,17 @@ python process_data.py
 
 Then, use the following script to train the generation model:
 ```Shell
-bash Track2/train.sh
+bash Track2/train.sh 0
 ```
 
 Then, use the following script to test the generation model with oracle knowledge pieces (Note: this test mode will not be considered for the final submission):
 ```Shell
-bash Track2/test.sh
+bash Track2/test.sh 0 $exp_dir
 ```
 
 Then, use the following script to test the generation model with a trained retriever:
 ```Shell
-bash Track2/test_with_ret.sh
+bash Track2/test_with_ret.sh 0 $exp_dir
 ```
 
 Note, you may need to download a chinese-bert model bert-base-chinese to the corresponding place if directly visiting to the huggingface website is not available to run the evaluation scripts to get the Bertscore metrics. Also, you may need to download the pretrained model bge-large-zh-v1.5 to the corresponding place.
