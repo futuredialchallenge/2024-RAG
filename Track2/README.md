@@ -6,7 +6,7 @@ Most existing dialog systems do not carefully model the available knowledge for 
 *  Multiple pieces of knowledge may be useful for response generation given the context.
 
 # Task Definition
-The basic task for the dialog system is that, for each dialog turn, given the dialog history, the user utterance, the local KB, and the global KB (including FAQ lists), to retrieve the useful knowledge pieces from the knowledge base and then generate an appropriate response. For every labeled dialog, useful knowledge pieces may be retrieved by the retrieval model in Track 1. For unlabeled dialogs, there are no knowledge base annotations.
+The basic task for the dialog system is that, for each dialog turn, given the dialog history, the user utterance, the local KB, and the global KB, and the FAQ lists, to retrieve the useful knowledge pieces from the knowledge base and then generate an appropriate response. For every labeled dialog, useful knowledge pieces may be retrieved by the retrieval model in Track 1. For unlabeled dialogs, there are no knowledge base annotations.
 
 # Baseline 
 The folder provides a baseline for the generation system.  
